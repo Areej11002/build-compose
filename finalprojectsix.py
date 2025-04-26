@@ -86,4 +86,34 @@ Bank.change_bank_name("Default Bank")
 
 account1.disply()
 account2.disply()
+
+
+# 5. Static Variables and Static Methods
+# Assignment:
+# Create a class MathUtils with a static method add(a, b) that returns the sum. No class or instance variables should be used.
+
+#solution:
+class MathUtils:
+    @staticmethod
+    def add(a,b):
+        return a + b
+    
+result = MathUtils.add(10,5)
+print("Sum of my 2 numbers are:", result)
+
+
+# 6. Constructors and Destructors
+# Assignment:
+# Create a class logger that prints a message when an object is created (constructor) and another message when it is destroyed (destructor).
+
+#solution:
+class Logger:
+    def __init__(self):
+        print("Message Before: Logger object created.") #constructor message
+
+    def __del__(self):
+        print("Message After: Logger object destructor.")
+
+log = Logger()
+del log
         
